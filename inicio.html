@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>CFC - Cantinas Online</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="logo_vermelha.png">
+    <script src="scripts.js" defer></script>
+    <script src="scripts2.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CFC-cantinas online é um site de pedidos online de lanches, pizzas, bebidas e sobremesas.">
+    <meta name="keywords" content="CFC, cantinas online, pedidos online, lanches, pizzas, bebidas, sobremesas">
+</head>
+<body>
+    <header id="cabecalho">
+        <img id="logo" src="logo.png" alt="Logo da cantina CFC">
+        <div id="fazer_pedido">
+            <button id="btn_fazer_pedido" onclick="Fazer_pedido()">FAZER PEDIDO</button> 
+        </div>
+    </header>
+
+    <div class="bloco_principal">
+        <div class="item">
+            <img class="imagem_item" src="pizza.png" alt="Pizza">
+            <h1 class="nome_do_item">PIZZA</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_pizza" onclick="Adc_pizza()">+</button>
+                <h1 class="quant_item" id="quant_pizza">0</h1>
+                <button class="btn_remover" id="btn_remover_pizza" onclick="Rmv_pizza()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="hamburguer.png" alt="Hamburguer">
+            <h1 class="nome_do_item">HAMBURGUER </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_hamburguer" onclick="Adc_hamburguer()">+</button>
+                <h1 class="quant_item" id="quant_hamburguer">0</h1>
+                <button class="btn_remover" id="btn_remover_hamburguer" onclick="Rmv_hamburguer()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="coxinha.png" alt="Coxinha">
+            <h1 class="nome_do_item">COXINHA </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_coxinha" onclick="Adc_coxinha()">+</button>
+                <h1 class="quant_item" id="quant_coxinha">0</h1>
+                <button class="btn_remover" id="btn_remover_coxinha" onclick="Rmv_coxinha()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="esfirra.png" alt="Esfirra de frango">
+            <h1 class="nome_do_item">ESFIRRA DE FRANGO </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_esfirra_de_frango" onclick="Adc_esfirra_de_frango()">+</button>
+                <h1 class="quant_item" id="quant_esfirra_de_frango">0</h1>
+                <button class="btn_remover" id="btn_remover_esfirra_de_frango" onclick="Rmv_esfirra_de_frango()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="esfirra.png" alt="Esfirra de presunto e queijo">
+            <h1 class="nome_do_item">ESFIRRA DE PRESUNTO E QUEIJO </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_esfirra_de_pres_queijo" onclick="Adc_esfirra_de_pres_queijo()">+</button>
+                <h1 class="quant_item" id="quant_esfirra_de_pres_queijo">0</h1>
+                <button class="btn_remover" id="btn_remover_esfirra_de_pres_queijo" onclick="Rmv_esfirra_de_pres_queijo()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="sanduiche.png" alt="Sanduiche natural">
+            <h1 class="nome_do_item">SANDUICHE NATURAL </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_sanduiche" onclick="Adc_sanduiche()">+</button>
+                <h1 class="quant_item" id="quant_sanduiche">0</h1>
+                <button class="btn_remover" id="btn_remover_sanduiche" onclick="Rmv_sanduiche()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="pastel.png" alt="Pastel">
+            <h1 class="nome_do_item">PASTEL</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_pastel" onclick="Adc_pastel()">+</button>
+                <h1 class="quant_item" id="quant_pastel">0</h1>
+                <button class="btn_remover" id="btn_remover_pastel" onclick="Rmv_pastel()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="bolo de chocolate.png" alt="Bolo de chocolate">
+            <h1 class="nome_do_item">BOLO DE CHOCOLATE </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_bolo_chocolate" onclick="Adc_bolo_chocolate()">+</button>
+                <h1 class="quant_item" id="quant_bolo_chocolate">0</h1>
+                <button class="btn_remover" id="btn_remover_bolo_chocolate" onclick="Rmv_bolo_chocolate()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="bolo de morango.png" alt="Bolo de morango">
+            <h1 class="nome_do_item">BOLO DE MORANGO </h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_bolo_morango" onclick="Adc_bolo_morango()">+</button>
+                <h1 class="quant_item" id="quant_bolo_morango">0</h1>
+                <button class="btn_remover" id="btn_remover_bolo_morango" onclick="Rmv_bolo_morango()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="suco de maracuja.png" alt="suco de maracuja">
+            <h1 class="nome_do_item">SUCO DE MARACUJÁ</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_suco_maracuja" onclick="Adc_suco_maracuja()">+</button>
+                <h1 class="quant_item" id="quant_suco_maracuja">0</h1>
+                <button class="btn_remover" id="btn_remover_suco_maracuja" onclick="Rmv_suco_maracuja()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="suco de limão.png" alt="suco de limão">
+            <h1 class="nome_do_item">SUCO DE LIMÃO</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_suco_limao" onclick="Adc_suco_limao()">+</button>
+                <h1 class="quant_item" id="quant_suco_limao">0</h1>
+                <button class="btn_remover" id="btn_remover_suco_limao" onclick="Rmv_suco_limao()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="suco de uva.png" alt="suco de uva">
+            <h1 class="nome_do_item">SUCO DE UVA</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_suco_uva" onclick="Adc_suco_uva()">+</button>
+                <h1 class="quant_item" id="quant_suco_uva">0</h1>
+                <button class="btn_remover" id="btn_remover_suco_uva" onclick="Rmv_suco_uva()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="suco de morango.png" alt="suco de morango">
+            <h1 class="nome_do_item">SUCO DE MORANGO</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_suco_morango" onclick="Adc_suco_morango()">+</button>
+                <h1 class="quant_item" id="quant_suco_morango">0</h1>
+                <button class="btn_remover" id="btn_remover_suco_morango" onclick="Rmv_suco_morango()">-</button>
+            </div>
+        </div>
+
+         <div class="item">
+            <img class="imagem_item" src="suco de manga.png" alt="suco de manga">
+            <h1 class="nome_do_item">SUCO DE MANGA</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_suco_manga" onclick="Adc_suco_manga()">+</button>
+                <h1 class="quant_item" id="quant_suco_manga">0</h1>
+                <button class="btn_remover" id="btn_remover_suco_manga" onclick="Rmv_suco_manga()">-</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="imagem_item" src="suco de abacaxi.png" alt="suco de abacaxi">
+            <h1 class="nome_do_item">SUCO DE ABACAXI</h1>
+            <div class="controle_item">
+                <button class="btn_adicionar" id="btn_adicionar_suco_abacaxi" onclick="Adc_suco_abacaxi()">+</button>
+                <h1 class="quant_item" id="quant_suco_abacaxi">0</h1>
+                <button class="btn_remover" id="btn_remover_suco_abacaxi" onclick="Rmv_suco_abacaxi()">-</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

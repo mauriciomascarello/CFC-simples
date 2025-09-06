@@ -1,0 +1,338 @@
+/*cabeçalho da tela principal*/
+#cabecalho{
+    background-color: rgb(236, 26, 26);
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position:fixed;
+    top: 0px;
+    
+}
+
+/*body*/
+body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height:100%;
+    background-color:white
+    
+}
+/*imagem logotipo*/
+#logo{
+    height: 60px;
+    width: 60px;
+
+
+}
+/* classe para o body em cassos especificos*/
+.corpo{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+/*div do botão fazer pedido*/
+#fazer_pedido{
+    padding:0px;
+    margin:12px;
+    position: absolute;
+    right: 0px;
+    
+    
+}
+/*botão fazer pedido tela principal*/
+#btn_fazer_pedido{
+    height:30px;
+    width:auto;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*botão fazer pedido tela principal com efeito mouse*/
+#btn_fazer_pedido:hover{
+    height:30px;
+    width:auto;
+    border-radius: 15px;
+    background-color:rgb(236, 26, 26);
+    color: white;
+    border-color:white;
+    border: 2px,solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*imagem dos itens na tela principal*/
+.imagem_item{
+    height: 150px;
+    width: 15opx;
+
+}
+/*div principal(pai) tela principal*/
+    .bloco_principal{
+    padding-top: 50px;
+    margin: 20px;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    }
+   /*div do item tela principal*/
+    .item{
+        height: 156px;
+        width: 100fr;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        margin: 20px;
+        margin-bottom:0px;
+        padding: 20px;
+        box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 0.8);
+        
+
+    }
+   /*nome do item tela principal*/
+    .nome_do_item{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+/*botão + dos itens da tela principal*/
+    .btn_adicionar{
+        background: transparent;
+        border: 0;
+        color: lawngreen;
+        font-size: 50px;
+    }
+/*botão - dos itens da tela principal*/
+
+    .btn_remover{
+        background: transparent;
+        border: 0;
+        color: red;
+        font-size: 50px;
+    }
+/*mostrador da quantidade do item tela principal*/
+    .quant_item{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
+
+/*botão + dos itens da tela principal com efeito mouse*/
+    .btn_adicionar:hover{
+        background: transparent;
+        border: 0;
+        color: rgb(46, 90, 3);
+        font-size: 50px;
+    }
+    /*botão + dos itens da tela principal com efeito mouse*/
+
+     .btn_remover:hover{
+        background: transparent;
+        border: 0;
+        color: rgb(148, 29, 29);
+        font-size: 50px;
+    }
+
+/*div principal(pai) como plano de fundo tela entrar*/
+.box{
+     width: 500px;
+  height: 620px;
+  background-color: red;
+  margin:0;
+  padding:0;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  border-radius: 50px;
+} 
+/*div principal(pai) como plano de fundo tela login*/
+#background{
+  width: 500px;
+  background-color: red;
+  margin:0;
+  padding:0;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  border-radius: 50px;
+
+}
+/*div principal(pai) como plano de fundo telas */
+#plano_de_fundo{
+  width: 500px;
+  background-color: red;
+  margin:0;
+  padding:50px;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  border-radius: 50px;
+
+}
+/*imputs arquivo nome*/
+.imputs{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.conteiner{
+    text-align: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+.logotipo{
+    height: 150px;
+    width: 150px;
+    align-items: center;
+
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.nome {
+    background-color: white;
+    border-color: black;
+    border-radius: 16px;
+    height: 40px;
+    width: 400px
+}
+
+
+
+
+#btn_entrar{
+    background-color:white;
+    border-color: black;
+    border-radius: 16px;
+    height: 45px;
+    width: 405px;
+    margin: 0px;
+}
+
+h6{
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h5{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.corpo2{
+    padding:0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.div_principal{
+    border:8px,solid;
+    border-color: red;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height: auto;
+    padding: 20px;
+    margin:20px;
+    border-radius: 50px;
+}
+
+.itens_pedidos{
+    border: 8px,solid;
+    border-color: red;
+    width: auto;
+    height:auto;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 18px; 
+    display: flex;
+    flex-direction:column;
+}
+
+.total_a_pagar{
+    border: 8px,solid;
+    border-color: red;
+    width: auto;
+    height:auto;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 18px;
+}
+
+.nome_do_cliente{
+    border: 8px,solid;
+    border-color: red;
+    width: auto;
+    height:auto;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 18px;
+}
+
+.numero_do_pedido{
+    border: 8px,solid;
+    border-color: red;
+    width: auto;
+    height:auto;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 18px;
+    display: flex;
+
+}
+
+#itens_pedidos_text{
+font-size: 20px;
+font-family:'Courier New', Courier, monospace;
+color: rgb(145, 0, 0);
+}
+
+#total_a_pagar_text{
+font-size: 20px;
+font-family:'Courier New', Courier, monospace;
+color: rgb(145, 0, 0);
+}
+
+#nome_do_cliente_text{
+font-size: 20px;
+font-family:'Courier New', Courier, monospace;
+color: rgb(145, 0, 0);
+}
+
+
+#numero_do_pedido_text{
+font-size: 20px;
+font-family:'Courier New', Courier, monospace;
+color: rgb(145, 0, 0);
+}
+
+.controle_item{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: auto;
+}
